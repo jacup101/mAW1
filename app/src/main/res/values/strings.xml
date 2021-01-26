@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hello World</string>
+    <string name="button_hello">Say Hi</string>
+    <string name="button_countUp">Count Up</string>
+    <string name="button_countDown">Count Down</string>
+    <string name="string_textViewCount">0</string>
+    <string name="toast_message">Hello</string>
+    <string name="count_warning">Stop Hurting Me</string>
+    <string name="suicide_warning">I\'m gonna kill myself</string>
+</resources>
