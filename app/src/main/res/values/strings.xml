@@ -5,6 +5,6 @@
     <string name="button_countDown">Count Down</string>
     <string name="string_textViewCount">0</string>
     <string name="toast_message">Hello</string>
-    <string name="count_warning">Stop Hurting Me</string>
-    <string name="suicide_warning">I\'m gonna kill myself</string>
+    <string name="count_warning">I Can\'t Count Down From 0</string>
+    <string name="second_activity">Second Activity</string>
 </resources>

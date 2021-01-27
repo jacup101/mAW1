@@ -2,6 +2,7 @@ package com.example.helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.renderscript.RenderScript;
 import android.util.Log;
@@ -39,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //handle what happens after I click
-                sayHello(v);
+                //sayHello(v);
+                launchNextActivity(v);
             }
         });
 
@@ -71,19 +73,18 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
             numTries ++;
-            if(numTries == 5) {
+            if(numTries %5 == 0) {
                 Toast toast = Toast.makeText(this,R.string.count_warning,Toast.LENGTH_SHORT);
                 toast.show();
-            } if(numTries == 20) {
-                Toast toast = Toast.makeText(this,R.string.suicide_warning,Toast.LENGTH_SHORT);
-                toast.show();
-            }if(numTries > 25) {
-                finish();
-                System.exit(0);
             }
         }
         //when you see an object, you want to check to make sure its not null
 
 
+    }
+    public void launchNextActivity(View view) {
+        //create an intent and you need to specify from and to
+        Intent intent = new Intent(this,SecondActivity.class);
+        startActivity(intent);
     }
 }
